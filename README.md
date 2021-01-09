@@ -4,7 +4,8 @@
 
 ### Thông tin:
 - GVHD: ThS LÊ MINH NGUYỆN
-- Nhóm 25:  - LÊ NGUYỄN QUỐC AN _ 17DH110252
+- Nhóm 25:  
+            - LÊ NGUYỄN QUỐC AN _ 17DH110252
             - BÙI ĐẠT KHUYNH    _ 17DH110271 
             - ĐỖ ĐĂNG DANH      _ 17DH110008
 
