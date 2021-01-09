@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14FB0F9E-6A45-47E7-BB22-BA4F17F86B06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CRM02</RootNamespace>
+    <AssemblyName>CRM02</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualReactiveWinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ee513efc52b401d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Visual.Reactive.WinForms.1.0.0\lib\VisualReactiveWinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\ClassChiTietDH.cs" />
+    <Compile Include="Class\ClassDonHang.cs" />
+    <Compile Include="Class\ClassDSHangThanhVien.cs" />
+    <Compile Include="Class\ClassHangThanhVien.cs" />
+    <Compile Include="Class\ClassKhachHang.cs" />
+    <Compile Include="Class\ClassNhanVien.cs" />
+    <Compile Include="Class\ClassQuanLyChiTietDonHang.cs" />
+    <Compile Include="Class\ClassQuanLyDonHang.cs" />
+    <Compile Include="Class\ClassQuanLyKhachHang.cs" />
+    <Compile Include="Class\ClassQuanLyNhanVien.cs" />
+    <Compile Include="Class\ClassQuanLySanPham.cs" />
+    <Compile Include="Class\ClassSanPham.cs" />
+    <Compile Include="Class\DataProvider.cs" />
+    <Compile Include="FormKiemDuyetLenHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKiemDuyetLenHang.designer.cs">
+      <DependentUpon>FormKiemDuyetLenHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietDH.Designer.cs">
+      <DependentUpon>frmChiTietDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHangThanhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHangThanhVien.designer.cs">
+      <DependentUpon>frmHangThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDonHang.designer.cs">
+      <DependentUpon>frmDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSanPham.designer.cs">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuThongTin.Designer.cs">
+      <DependentUpon>frmTraCuuThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormKiemDuyetLenHang.resx">
+      <DependentUpon>FormKiemDuyetLenHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietDH.resx">
+      <DependentUpon>frmChiTietDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHangThanhVien.resx">
+      <DependentUpon>frmHangThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDonHang.resx">
+      <DependentUpon>frmDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraCuuThongTin.resx">
+      <DependentUpon>frmTraCuuThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
