@@ -35,11 +35,11 @@ namespace CRM02
 
         public ClassDonHang(DataRow row)
         {
-            this.MaDH = row["madonhang"].ToString();
-            this.MaKH = row["makhachhang"].ToString();
-            this.ThanhTien = int.Parse(row["thanhtien"].ToString());
+            this.MaDH = row["idDONHANG"].ToString();
+            this.MaKH = row["id_KHACHHANG"].ToString();
+            this.ThanhTien = int.Parse(row["tongTien"].ToString());
             this.NguoiTao = row["nguoitao"].ToString();
-            this.NgayTao = row["ngaytao"].ToString();
+            this.NgayTao = row["id_NHANVIEN"].ToString();
         }
 
         public ClassDonHang()

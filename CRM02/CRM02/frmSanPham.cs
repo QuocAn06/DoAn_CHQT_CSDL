@@ -71,5 +71,10 @@ namespace CRM02
             _singleton = null;
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,30 @@
 USE CRM
 GO
 
+/****** UserDefinedFunction [dbo].[fn_Get_MaDonHang_Next] ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE FUNCTION [dbo].[fn_Get_MaDonHang_Next](@MaDH VARCHAR(15))
+RETURNS VARCHAR(15) 
+AS
+BEGIN
+	SET @MaDH+='%'; 
+    DECLARE @MaDH_Next VARCHAR(15)
+    SELECT @MaDH_Next = (
+        SELECT TOP 1 DONHANG.idDONHANG madonhang
+        FROM DONHANG    
+        WHERE madonhang like @MaDH
+		ORDER BY madonhang DESC
+    )    
+	DECLARE  @n INT
+	SET @n = CONVERT(INT, RIGHT(@MaDH_Next,3)) +1
+	SET @MaDH_Next = LEFT(@MaDH,10) + RIGHT('000'+CONVERT(varchar(3),@n),3)
+    RETURN @MaDH_Next
+END
+GO
+
 /***** FUNCTION Auto_idNHANVIEN *****/
 Select * From [dbo].[NHANVIEN]
 

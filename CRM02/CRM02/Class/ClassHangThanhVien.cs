@@ -36,10 +36,10 @@ namespace CRM02
 
         public ClassHangThanhVien(DataRow row)
         {
-            this.MaHang = row["mahang"].ToString();
-            this.TenHang = row["tenhang"].ToString();
-            this.Dklenhang = row["dieukienlenhang"].ToString();
-            this.Quyenloi = row["quyenloi"].ToString();
+            this.MaHang = row["idLOAIKHACHHANG"].ToString();
+            this.TenHang = row["tenXEPLOAI"].ToString();
+            this.Dklenhang = row["diem_LonNhat"].ToString();
+            this.Quyenloi = row["diem_NhoNhat"].ToString();
         }
     }
 }

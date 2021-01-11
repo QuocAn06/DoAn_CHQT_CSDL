@@ -25,7 +25,7 @@ namespace CRM02
         {
             List<ClassKhachHang>  list = new List<ClassKhachHang>();
 
-            string query = "select * from KhachHang";
+            string query = "select * from [dbo].[KHACHHANG]";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
@@ -36,7 +36,7 @@ namespace CRM02
         }
         public ClassKhachHang TraCuuKhachHang(string soDienThoai)
         {
-            string query = "select * from KhachHang where dienthoai='" + soDienThoai + "'";
+            string query = "select * from [dbo].[KHACHHANG] where [dbo].[KHACHHANG].[soDienThoai]='" + soDienThoai + "'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             if (data.Rows.Count <= 0)
             {
@@ -47,7 +47,7 @@ namespace CRM02
 
         public bool XoaKhachHang(string id)
         {
-            string query = "delete from KhachHang where makhachhang='" + id + "'";
+            string query = "delete from [dbo].[KHACHHANG] where id_KHACHHANG='" + id + "'";
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

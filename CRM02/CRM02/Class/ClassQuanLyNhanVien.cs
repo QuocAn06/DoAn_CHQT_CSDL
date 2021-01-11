@@ -26,7 +26,7 @@ namespace CRM02
         {
             List<ClassNhanVien>  list = new List<ClassNhanVien>();
 
-            string query = "select tendangnhap,tennguoidung from nguoidung where maloai = 'nv'";
+            string query = "select _username,ten_NHANVIEN from [dbo].[NHANVIEN] where idLOAINHANVIEN = 2";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)

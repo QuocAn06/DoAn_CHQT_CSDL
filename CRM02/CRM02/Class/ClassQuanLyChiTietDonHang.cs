@@ -25,7 +25,7 @@ namespace CRM02
         {
             List<ClassChiTietDH> list = new List<ClassChiTietDH>();
 
-            string query = "select * from ChiTietDonHang where madonhang='"+id+"'";
+            string query = "select * from [dbo].[CHITIETDONHANG] where [idDONHANG]='" + id+"'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)

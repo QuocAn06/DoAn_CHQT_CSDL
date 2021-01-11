@@ -26,7 +26,7 @@ namespace CRM02
         {
             List<ClassDonHang> list = new List<ClassDonHang>();
 
-            string query = "select * from donhang";
+            string query = "select * from [dbo].[DONHANG]";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
@@ -41,7 +41,7 @@ namespace CRM02
         {
             List<ClassDonHang> list = new List<ClassDonHang>();
 
-            string query = "select * from donhang where makhachhang ='" + MaKH +"'";
+            string query = "select * from [dbo].[DONHANG] where id_KHACHHANG ='" + MaKH +"'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)

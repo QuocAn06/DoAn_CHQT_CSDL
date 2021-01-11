@@ -37,10 +37,10 @@ namespace CRM02
 
         public ClassChiTietDH(DataRow row)
         {
-            this.maSanPham = row["masanpham"].ToString();
-            this.tenSanPham = ClassQuanLySanPham.Intance.GetDataById(row["masanpham"].ToString()).TenSanPham ;
-            this.donGia = int.Parse(row["giaban"].ToString());
-            this.soLuong = int.Parse(row["soluong"].ToString());
+            this.maSanPham = row["[idSANPHAM]"].ToString();
+            this.tenSanPham = ClassQuanLySanPham.Intance.GetDataById(row["[idSANPHAM]"].ToString()).TenSanPham ;
+            this.donGia = int.Parse(row["giaBan"].ToString());
+            this.soLuong = int.Parse(row["soLuong"].ToString());
         }
 
 

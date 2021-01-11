@@ -47,14 +47,14 @@ namespace CRM02
 
         public ClassKhachHang(DataRow row)
         {
-            this.MaKH = row["makhachhang"].ToString();
-            this.HoTen = row["hoten"].ToString();
-            this.NgaySinh = String.Format("{0:dd/MM/yyyy}", row["ngaysinh"]);
-            this.DiaChi = row["diachi"].ToString();
-            this.DienThoai = row["dienthoai"].ToString();
-            this.DiemThuong = (int)row["diemthuong"];
-            this.HangThanhVien = row["mahang"].ToString();
-            this.NgayDK = String.Format("{0:dd/MM/yyyy}", row["ngaydangki"]);
+            this.MaKH = row["id_KHACHHANG"].ToString();
+            this.HoTen = row["ten_KHACHHANG"].ToString();
+            this.NgaySinh = String.Format("{0:dd/MM/yyyy}", row["ngaySinh"]);
+            this.DiaChi = row["diaChiThuongTru"].ToString();
+            this.DienThoai = row["soDienThoai"].ToString();
+            //this.DiemThuong = (int)row["diemthuong"];
+            //this.HangThanhVien = row["mahang"].ToString();
+            //this.NgayDK = String.Format("{0:dd/MM/yyyy}", row["ngaydangki"]);
         }
 
     }

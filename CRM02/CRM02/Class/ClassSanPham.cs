@@ -32,9 +32,9 @@ namespace CRM02
 
         public ClassSanPham(DataRow row)
         {
-            this.MaSanPham = row["masanpham"].ToString();
-            this.TenSanPham = row["tensanpham"].ToString();
-            this.DonGia = int.Parse(row["dongia"].ToString());
+            this.MaSanPham = row["idSANPHAM"].ToString();
+            this.TenSanPham = row["tenSANPHAM"].ToString();
+            this.DonGia = int.Parse(row["donGia"].ToString());
 
         }
 
