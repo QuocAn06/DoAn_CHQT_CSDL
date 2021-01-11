@@ -27,15 +27,15 @@ namespace CRM02
 
         public ClassNhanVien(DataRow row)
         {
-            this.TenDangNhap = row["tendangnhap"].ToString();
-            this.TenNhanVien = row["tennguoidung"].ToString();
+            this.TenDangNhap = row["_username"].ToString();
+            this.TenNhanVien = row["ten_NHANVIEN"].ToString();
             this.HinhAnh = null;
             try
             {
                 this.HinhAnh = (byte[])row["hinhanh"];
             }
             catch (Exception) { }
-            this.Maloai = row["maloai"].ToString();
+            this.Maloai = row["idLOAINHANVIEN"].ToString();
         }
 
         public ClassNhanVien(string tenDangNhap, string tenNhanVien, byte[] hinhAnh, string maloai)
