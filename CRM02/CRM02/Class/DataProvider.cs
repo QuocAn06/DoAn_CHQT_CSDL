@@ -20,7 +20,7 @@ namespace CRM02
         }
 
         private DataProvider() { }
-        private string connectionSTR = ConfigurationManager.ConnectionStrings["CRM02"].ConnectionString;
+        private string connectionSTR = ConfigurationManager.ConnectionStrings["CRM"].ConnectionString;
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

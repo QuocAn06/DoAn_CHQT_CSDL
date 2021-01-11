@@ -56,7 +56,7 @@ namespace CRM02
             byte[] hashData = new MD5CryptoServiceProvider().ComputeHash(temp);
             matkhau = BitConverter.ToString(hashData);
 
-            string query = "select * from nguoidung where tendangnhap='" + tendangnhap + "' and matkhau='" + matkhau + "'";         
+            string query = "select * from [dbo].[NHANVIEN] where _username='" + tendangnhap + "' and _password='" + matkhau + "'";         
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
             return result.Rows.Count > 0;
         }
